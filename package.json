@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@defidollar/core-client-lib": "github:defidollar/core-client-lib#52c3156e9221a71d5bc7da8f0ed06fa4a54fa024",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
