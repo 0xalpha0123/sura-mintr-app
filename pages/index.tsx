@@ -1,13 +1,20 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+
+import Layout from "../components/Layout"
+
+import styles from "../styles/Home.module.scss"
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <h1>Defi Dollar</h1>
-    </div>
+    <>
+      <Head>
+        <title>Sura Stablecoin</title>
+      </Head>
+      <Layout>
+        <h1 className={"relieve ".concat(styles["text-center"])}>Welcome to Sura Stablecoin</h1>
+      </Layout>
+    </>
   )
 }
 
