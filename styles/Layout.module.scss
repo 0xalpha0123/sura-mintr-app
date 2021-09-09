@@ -1,0 +1,56 @@
+$hover_colors: (
+  "green": #16c053,
+  "blue": #585ee6,
+  "red": #f86a9d,
+  "orange": #f90,
+  "lightblue": #00c1eb,
+  "purple": #bb7aee
+);
+
+.global_container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  nav {
+    padding-top: 1rem;
+    min-height: 10vh;
+  }
+  footer {
+    min-height: 10vh;
+  }
+  nav ul, footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 1rem 0;
+    color: #31456a;
+    li a {
+      padding: 0.35rem 0;
+    }
+  }
+  footer ul a:hover {
+    color: #061024;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    max-width: 80vw;
+  }
+  @media screen and (min-width: 992px) {
+    max-width: 60vw;
+  }
+}
+
+@each $color, $value in $hover_colors {
+  nav ul .#{$color}:hover {
+    color: $value;
+    border-bottom: 1px solid $value;
+  }
+}

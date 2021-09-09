@@ -1,9 +1,12 @@
+$grey_background: #f3f4f8;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: $grey_background;
 }
 
 a {
@@ -13,4 +16,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.relieve {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 4.6875px 4.6875px 9.375px rgb(174 174 192 / 40%), -3.125px -3.125px 9.375px #fff;
 }
