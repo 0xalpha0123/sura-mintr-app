@@ -32,10 +32,10 @@
     font-weight: bold;
   }
   input {
-    background-color: $grey_background;
+    background-color: inherit;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 4px;
-    padding: 0.5rem 0.1rem;
+    padding: 0.5rem 0.2rem;
     outline: none;
     margin-left: 2rem;
   }

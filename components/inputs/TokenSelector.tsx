@@ -12,12 +12,13 @@ export type token = {
 
 const availableTokens:token[] = tokens
 
-const TokenSelector = (setValue: any) => {
+const TokenSelector = (props: any) => {
+  const { setValue }= props
   const { display } = useContext(AddTokensContext)
 
   const [tokens, setTokens] = useState([availableTokens[0]])
 
-  useEffect(() => {setValue(tokens)}, [tokens])
+  useEffect(() => setValue(tokens), [tokens])
 
   const makeUpdate = (symbol: string) => {
     return function(value: number) {
