@@ -9,6 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &.darkmode {
+    background: rgba(37,40,42,.73);
+    .list, button {
+      background: #25282b;
+      color: #fff;
+    }
+  }
   background: rgba(255,255,255,0.8);
 }
 .list {

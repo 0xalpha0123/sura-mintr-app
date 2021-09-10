@@ -8,6 +8,16 @@ $hover_colors: (
 );
 
 .global_container {
+  &.darkmode {
+    background: #25282b;
+    color: #fff;
+    nav ul, footer ul {
+      color: inherit;
+    }
+    footer ul a:hover {
+      color: #d3d3d3;
+    }
+  }
   min-height: 100vh;
   nav {
     padding-top: 1rem;
@@ -24,8 +34,11 @@ $hover_colors: (
     margin: 0 auto;
     padding: 1rem 0;
     color: #31456a;
-    li a {
-      padding: 0.35rem 0;
+    li {
+      margin: auto 0;
+      a {
+        padding: 0.35rem 0;
+      }
     }
   }
   footer ul a:hover {

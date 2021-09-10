@@ -23,3 +23,22 @@ a {
   padding: 1.5rem;
   box-shadow: 4.6875px 4.6875px 9.375px rgb(174 174 192 / 40%), -3.125px -3.125px 9.375px #fff;
 }
+.darkmode {
+  .relieve {
+    box-shadow: inset 3.53813px 3.53813px 7.07626px rgb(70 77 85 / 40%), inset -2.35875px -2.35875px 7.07626px #15171a;
+  }
+  input {
+    border: 1px solid #777!important;
+  }
+}
+
+button.btn {
+  background: inherit;
+  color: inherit;
+  padding: 0.5rem 0.3rem;
+  border-radius: 0.3rem;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}

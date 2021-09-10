@@ -1,4 +1,7 @@
 import Link from "next/link"
+import { useContext } from "react"
+
+import ThemeContext from "../context/ThemeContext"
 import styles from "../styles/Layout.module.scss"
 
 const linksData = [
@@ -48,8 +51,23 @@ const Navbar = (props) => {
     <nav>
       <ul>
         {links}
+        <DarkmodeToggle />
       </ul>
     </nav>
+  )
+}
+
+const DarkmodeToggle = () => {
+  const { darkmode, toggleDarkmode } = useContext(ThemeContext)
+  const label = darkmode ? "Disable dark mode" : "Enable dark mode"
+  const toggle = () => {
+    toggleDarkmode()
+  }
+  return (
+    <button
+      onClick={toggle}
+      className="btn relieve"
+    >{label}</button>
   )
 }
 
