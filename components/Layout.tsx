@@ -1,5 +1,6 @@
 import Navbar from "./Navbar"
 import Footer from "./Footer"
+import TokensModal from "./inputs/TokensModal"
 
 import styles from '../styles/Layout.module.scss'
 
@@ -11,6 +12,7 @@ const Layout = ({children}) => {
         {children}
       </main>
       <Footer />
+      <TokensModal />
     </div>
   )
 }

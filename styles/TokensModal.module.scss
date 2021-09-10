@@ -1,0 +1,27 @@
+@use "common" as *;
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.8);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  background: $grey_background;
+  button {
+    padding: 1rem;
+    border: none;
+    background: $grey_background;
+    font-size: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
