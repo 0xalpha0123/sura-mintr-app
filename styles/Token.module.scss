@@ -1,0 +1,42 @@
+@use "common" as *;
+
+.token_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .user_balance {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 12px;
+    line-height: 1;
+    .amount {
+      font-size: 16px;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    button {
+      margin-left: 0.5rem;
+      border: none;
+      font-size: 18px;
+      &:hover {
+        background: rgb(200,200,200);
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    }
+  }
+  label {
+    font-weight: bold;
+  }
+  input {
+    background-color: $grey_background;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 0.5rem 0.1rem;
+    outline: none;
+    margin-left: 2rem;
+  }
+}
